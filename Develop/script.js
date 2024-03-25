@@ -5,19 +5,17 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const collectEmployees = function() {
   var NewEmployee = {
     firstName: { 
-          prompt:("What is the Employees First Name?"),
-          type: "string"
+          prompt:("What is the Employees First Name?")
         },
   lastName: {
-          prompt:("What is the Employees last Name?"),
-          type: "string"
+          prompt:("What is the Employees last Name?")
         },
   salary: { 
-          prompt:("What is the Salary of the Employee?"),
-          type: "string"},
+          prompt:Number("What is the Salary of the Employee?")
+        },
    prompter: function(obj) {
           return prompt(obj.prompt)
-   }
+   },
   };
   var Employee;  
   var addAnotherEmployee = function() {
