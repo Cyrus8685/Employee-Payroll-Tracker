@@ -3,28 +3,32 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
 const collectEmployees = function (NewEmployee) {
-  var NewEmployee = {
-               firstName: { prompt:("What is the Employees First Name?")},
-              lastName: { prompt:("What is the Employees last Name?")},
-              salary: { prompt:("What is the Salary of the Employee?")},
-                   prompter: function(obj) {return prompt(obj.prompt);},
+let Employee = true;  
+  const NewEmployees = [];
+  while(Employee) {
+  const NewEmployee = {
+               firstName: prompt("What is the Employees First Name?"),
+              lastName:   prompt("What is the Employees last Name?"),
+              salary: prompt("What is the Salary of the Employee?"),
+                  //  prompter: function(obj) {return prompt(obj.prompt);},
 };
-  var NewEmployees = [];
-  var Employee;  
-  var addAnotherEmployee = function() {
-        do {
-          Employee = {};
-              for (var x in NewEmployee) {
-                  if (typeof NewEmployee [x] !== `function`)  {
-                      Employee [x] = NewEmployee.prompter(NewEmployee[x]);
-                  }
-                }
-                NewEmployees.push(Employee)
-              } while (confirm("Add Another Employee?"))
-            console.log("Done.");
-            };
-  addAnotherEmployee();
-  console.log(NewEmployees);
+NewEmployees.push(NewEmployee)
+Employee = confirm("Add Another Employee?")
+  }
+  /* // var addAnotherEmployee = function() {
+  //       do {
+  //         Employee = {};
+  //             for (var x in NewEmployee) {
+  //                 if (typeof NewEmployee [x] !== `function`)  {
+  //                     Employee [x] = NewEmployee.prompter(NewEmployee[x]);
+  //                 }
+  //               }
+  //               NewEmployees.push(Employee)
+  //             } while (confirm("Add Another Employee?"))
+  //           console.log("Done.");
+  //           };
+  // addAnotherEmployee();
+  // console.log(NewEmployees); */
   return NewEmployees
   
           }
