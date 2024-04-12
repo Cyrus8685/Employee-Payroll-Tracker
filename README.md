@@ -6,6 +6,6 @@ Wrote a Function to calculate the average of the different salary amounts entere
 
 Wrote a Function to select a random emplyee name from the names entered and return the answer in the console log.
 
-Git Hub Repository Link: https://github.com/Cyrus8685/Module-03-Challenge/tree/main/Develop
+Git Hub Repository Link: [https://github.com/Cyrus8685/Module-03-Challenge/tree/main/Develop](https://cyrus8685.github.io/Employee-Payroll-Tracker/)
 
 Git Hub Repository Folder Path: Module-03-Challenge/Develop/
