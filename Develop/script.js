@@ -9,7 +9,7 @@ let Employee = true;
   const NewEmployee = {
                firstName: prompt("What is the Employees First Name?"),
               lastName:   prompt("What is the Employees last Name?"),
-              salary: prompt("What is the Salary of the Employee?"),
+              salary: parseInt(prompt('Please Enter Salary',"0"),10),
                   //  prompter: function(obj) {return prompt(obj.prompt);},
 };
 NewEmployees.push(NewEmployee)
@@ -44,8 +44,11 @@ const displayAverageSalary = function(employeesArray) {
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-const rand = employeesArray[ (Math.floor (Math.random() * employeesArray.length))]
-console.log(rand)
+let  rand = employeesArray[ (Math.floor (Math.random() * employeesArray.length))];
+rand1 = rand.firstName;
+rand2 = rand.lastName;
+console.log(rand1,rand2);
+
   // TODO: Select and display a random employee
 }
 /*
